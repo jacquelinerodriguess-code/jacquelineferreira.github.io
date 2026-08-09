@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacqueline Ferreira</title>
+  <style>
+    :root {
+      --background: #f5f7f7;
+      --surface: #ffffff;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --accent: #2f6468;
+      --accent-soft: #e8f0f0;
+      --border: #e2e8ea;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .container {
+      width: min(1000px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 88px 0 48px;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.6rem, 7vw, 4.5rem);
+      letter-spacing: -1.5px;
+    }
+
+    header p {
+      max-width: 760px;
+      margin: 18px auto 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    nav {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 14px;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    main {
+      padding: 10px 0 66px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 30px;
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-top: 0;
+      font-size: 1.4rem;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 0 0 42px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 720px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        padding-top: 58px;
+      }
+
+      section {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header id="home">
+      <div class="tag">MBA Student • Business • UGC Creator</div>
+      <h1>Jacqueline Ferreira</h1>
+      <p>
+        Hi, I’m Jacqueline Ferreira. I am an MBA student with interests in business,
+        finance, technology, and digital content creation. I am also exploring
+        opportunities as a UGC creator, where I can combine creativity,
+        communication, and business.
+      </p>
+
+      <nav>
+        <a href="#education">Education</a>
+        <a href="#business">Business & Career Interests</a>
+        <a href="#ugc">UGC & Content Creation</a>
+        <a href="#goals">Professional Goals</a>
+      </nav>
+    </header>
+
+    <main class="grid">
+      <section id="education">
+        <h2>Education</h2>
+        <p>
+          I am currently pursuing an MBA and continuing to expand my knowledge
+          in business, finance, technology, and professional development.
+        </p>
+      </section>
+
+      <section id="business">
+        <h2>Business & Career Interests</h2>
+        <p>
+          I am interested in how business, finance, and technology work together
+          in today’s professional environment. I enjoy learning about new ideas,
+          tools, and strategies that can support business growth.
+        </p>
+      </section>
+
+      <section id="ugc">
+        <h2>UGC & Content Creation</h2>
+        <p>
+          I am exploring opportunities as a UGC creator and enjoy creating
+          authentic digital content that helps brands connect with their audiences
+          in a natural and relatable way.
+        </p>
+      </section>
+
+      <section id="goals">
+        <h2>Professional Goals</h2>
+        <p>
+          My professional goal is to continue strengthening my skills in business,
+          communication, technology, and digital content creation. I want to build
+          a career that combines strategic thinking with creativity, allows me to
+          contribute to meaningful projects, and gives me opportunities to keep
+          learning and growing professionally.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Jacqueline Ferreira
+    </footer>
+  </div>
+</body>
+</html>
